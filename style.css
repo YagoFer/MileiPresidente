@@ -1,0 +1,168 @@
+/* Estilos para el encabezado */
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Añadido */
+}
+h1 {
+    color: #FFF;
+}
+h2 {
+  color: #FFF;
+}
+
+p  {
+    color: #FFF;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Cambiado para alinear horizontalmente */
+  justify-content: center; /* Añadido para centrar en horizontal */
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Añadido para espaciar elementos */
+main > * {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+body {
+  /*margin:0;*/
+  background-color:#191919;
+  /*min-height:100vh;*/
+  /*display:flex;*/
+  align-items:center;
+  justify-content:center;
+  font-family:Helvetica,Sans-serif;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 10px);
+  height:calc(8vw + 10px);
+  background-image: linear-gradient(90deg, #a72cf8 0%, #FFCF00 49%, #FC4F4F 80%, #a72cf8 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw; 
+  font-weight:bold;
+  animation:slidebg 2s linear infinite;
+  margin: 0 auto;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+/*.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}*/
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+/* Estilos para la cuenta regresiva */
+.countdown-container {
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  text-align: center;
+  flex: 1; /* Distribuye el espacio de manera uniforme entre los elementos */
+  max-width: 120px; 
+}
+
+.countdown-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFCF00;
+}
+
+.countdown-label {
+  font-size: 18px;
+  color: #666;
+}
+
+
+
+/* Animación para los números */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+
+
+/* Estilos para el contenedor de votación */
+.voting-container {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+
+
+/* Estilos para el gráfico de votos */
+#graficoVotos {
+  width: 150px; /* Ajusta el tamaño del gráfico según tus necesidades */
+  height: 150px; /* Ajusta el tamaño del gráfico según tus necesidades */
+  margin-top: 20px;
+ 
+}
+
+
+ 

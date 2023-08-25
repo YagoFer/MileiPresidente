@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Milei Presidente</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/milei web-01.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Votacion Milei Presidente</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#cuentaRegresiva">Cuenta Regresiva</a></li>
+            <li><a href="#seccionVotar">Votar</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+            <br>
+            <br>
+            <div id="cuentaRegresiva">
+            <div class="countdown-container">
+                <h1>Cuenta Regresiva</h1>
+                <div class="countdown">
+                    <img src="images/milei web g-01.png"  width="200" height="200" alt="">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="dias">00</span>
+                        <br>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="horas">00</span>
+                        <br>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutos">00</span>
+                        <br>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="segundos">00</span>
+                        <br>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+        <br>
+        <br><br>
+        <h1>Acá tenes el botón que tanto queres!</h1>
+        <div id="seccionVotar">
+            <div class="voting-container"></div>
+              <br><br>
+             <a href="#" class="rainbow-button"  onclick="votar()"alt="Milei Presidente"></a>
+             <br><br>
+             <canvas id="graficoVotos"></canvas> 
+          </div>
+        </div>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2023</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
